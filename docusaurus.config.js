@@ -11,7 +11,7 @@ module.exports = {
       title: 'Landstar 7',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       links: [
         {
@@ -20,7 +20,7 @@ module.exports = {
           label: 'Документация',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+//        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/ayavrik/landstar7',
           label: 'GitHub',
@@ -88,14 +88,14 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ayavrik/landstar7/edit/master/website/',
+            'https://github.com/ayavrik/landstar7/edit/master/',
         },
-        blog: {
-          showReadingTime: true,
+//        blog: {
+//          showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+//          editUrl:
+//            'https://github.com/ayavrik/landstar7/edit/master/',
+//        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
