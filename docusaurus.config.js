@@ -2,7 +2,7 @@ module.exports = {
   title: 'Landstar 7',
   tagline: 'Справочная документация',
   url: 'https://ayavrik.github.io/landstar7',
-  baseUrl: '/',
+  baseUrl: '/landstar7/',
   favicon: 'img/favicon.ico',
   organizationName: 'ayavrik', // Usually your GitHub org/user name.
   projectName: 'landstar7', // Usually your repo name.
