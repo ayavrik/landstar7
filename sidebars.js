@@ -8,12 +8,20 @@ module.exports = {
     {
       type: 'category',
       label: 'Основной интерфейс',
-      items: ['doc1'],
+      items: [
+        'doc1',
+      {
+        'Описание функций': ['mdx',{'Пример':['doc2'],},],
+      },
+    ],
     },
     {
       type: 'category',
       label: 'Проект',
-      items: ['doc1'],
+      items: [
+        'проект/создание проекта',
+      
+      ],
     },
     {
       type: 'category',

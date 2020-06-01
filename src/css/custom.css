@@ -23,3 +23,14 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.ls7_icons {
+  vertical-align:middle;
+  width: 25px;
+}
+
+
+.ls7_menu {
+  vertical-align:middle;
+  width: 35px;
+}
