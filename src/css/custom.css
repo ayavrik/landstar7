@@ -15,11 +15,12 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
-  --ifm-icons-bg-color: rgb(72, 77, 91);
+
+  --chc-icons-bg-color: rgb(72, 77, 91);
+  --chc-hr-color:#f0f0f0;
   
-
-
 }
+
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -28,17 +29,89 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+
+/* Dark mode styles */
+html[data-theme='dark'] {
+  --chc-icons-bg-color: var(--ifm-code-background);
+  --chc-hr-color:#353535;
+}
+
+
+/* Interface icons style */
 .ls7_icons{
   vertical-align:middle;
   width: 25px;
-  background-color: var(--ifm-icons-bg-color);
+  background-color: var(--chc-icons-bg-color);
   border-radius: var(--ifm-code-border-radius);
 }
-html[data-theme='dark'] {
-  --ifm-icons-bg-color: var(--ifm-code-background);
-}
 
+
+/* Menu icons style */
 .ls7_menu {
   vertical-align:middle;
   width: 35px;
 }
+
+
+/* Homepage content display style */
+.center {
+  text-align: center;
+}
+
+.screenshot {
+  border-radius: 5px;
+  box-shadow: 0px 20px 35px -16px rgba(205, 115, 15, 0.57);
+  max-width: 260px;
+  height: auto;
+}
+.content {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 15px;
+}
+
+.content.row {
+  display: flex;
+  flex-direction: row;
+  margin: 60px auto;
+}
+
+.content .col {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px 20px;
+  align-self: center;
+}
+
+p.landing {
+  opacity: 0.7;
+}
+
+.content.row {
+  position: relative;
+}
+
+.content.row:not(:last-child)::after {
+  display: block;
+  height: 1px;
+  left: 25%;
+  right: 25%;
+  bottom: -10px;
+  background: var(--chc-hr-color);
+  content: '';
+  position: absolute;
+}
+
+.landing-ls7 {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.google-badge {
+  max-width: 260px;
+  height: auto;
+}
+
+

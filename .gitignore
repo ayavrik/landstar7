@@ -24,3 +24,4 @@ yarn-error.log*
 landstar7.code-workspace
 
 # Obsidian Workspace
+/docs/.obsidian
