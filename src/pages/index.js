@@ -14,7 +14,7 @@ function Home() {
     <Layout
       title={`Документация ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero hero--primary heroTilted', styles.heroBanner)}>
        
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -29,7 +29,7 @@ function Home() {
               Начать
             </Link>
           </div>
-        </div>
+        </div>     
       </header>
       <main>
           

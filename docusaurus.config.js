@@ -21,6 +21,7 @@ module.exports = {
           position: 'left',
         },
 //        {to: 'blog', label: 'Blog', position: 'left'},
+
         {
           href: 'https://github.com/ayavrik/landstar7',
           label: 'GitHub',
@@ -30,6 +31,11 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'ГЕОСТРОЙИЗЫСКАНИЯ',
+        src: 'img/GSI_logo.png',
+        href: 'http://geostroi.kz/',
+      },
       links: [
         {
           title: 'Docs',
@@ -74,8 +80,20 @@ module.exports = {
             },
           ],
         },
+        {
+          title: ' ',
+          items: [ 
+            {
+              html: `
+                <a href="https://www.chcnav.com" target="_blank" rel="noreferrer noopener" aria-label="CHCNAV">
+                  <img src='/landstar7/img/logo_chcnav.png' alt="CHCNAV" />
+                </a>
+              `,
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} ТОО "ГЕОСТРОЙИЗЫСКАНИЯ" `,
     },
   },
   presets: [
